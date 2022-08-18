@@ -1,12 +1,13 @@
 #Date: August 16, 2022
 #Author: Cristiana Aparecida Nogueira Couto
-#This script reads the raw data in xlsx format to produce a tible object in R
-#Subsequently it cleans the data, removing duplicates, empty lines etc.
+#This script reads the raw data in xlsx format to produce a tibble object in R
+#Subsequently it cleans the data removing duplicates and empty lines etc.
 #This is the step one of the analysis.
 
 library(readxl)
 library(dplyr)
 library(stringi)
+library(tidyr)
 
 #Reading data -------------
 
@@ -47,12 +48,10 @@ flora_table_final <- flora_table_clean[!(stri_detect_regex(
 #it was a error in the manual typing 
 diff_tables <- anti_join(flora_table_clean, flora_table_final)
 
-#For some reason we see that the previous manipulation add two with only NAs
+#For some reason we see that the previous manipulation add two lines with only NAs
 #We again remove these empty lines
 flora_table_final <- flora_table_final %>% filter_all(any_vars(!is.na(.)))
 
-#Some of the other error identified were regarding the names of the collection
-#Some rows contains the abbreviation, others the complete name of the herbarium
-#Another issue spotted was that some information is placed in the wrong column, 
-#for example the popular name of a plant is on the column that refers to the conservation
-#status
+#We output this table in the data folder
+if (!dir.exists("data/output")) dir.create("data/output")
+write.table(flora_table_final , file = "data/output/01_flora_table.csv", sep=",", row.names=FALSE)
