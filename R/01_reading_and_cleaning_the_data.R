@@ -54,4 +54,4 @@ flora_table_final <- flora_table_final %>% filter_all(any_vars(!is.na(.)))
 
 #We output this table in the data folder
 if (!dir.exists("data/output")) dir.create("data/output")
-write.table(flora_table_final , file = "data/output/01_flora_table.csv", sep=",", row.names=FALSE)
+save(flora_table_final, file="data/output/01_flora_table.rdata")
