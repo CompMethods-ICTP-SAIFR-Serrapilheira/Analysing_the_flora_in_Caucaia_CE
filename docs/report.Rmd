@@ -15,18 +15,9 @@ Collecting information of the existence of species in specific locations is crit
 The database used in this work contains the different species found in the city of Caucaia located in the Brazilian state of Ceará. The city has a coastal extension of 44 kilometers, where part of it is in a area of environmental protection. The vegetation formations of the city includes Coastal Zone Vegetation Complex, Shrubby Caatinga and Cerrado [@ipece]. In this short project for the discipline of Computational Methods in the Serrapilheira/ICTP-SAIFR Training Program in Quantitative Biology and Ecology, I plan to do a initial data analysis, following some steps to clean the database and organize it. Subsequently, I would like to calculate the genus richness of the city and look at how the richness of species differ depending on vegetation type.
 
 ## Database
-The database used for this work was a compilation of the 
 
+This dataset includes all plants register in a herbarium database collected in the municipality of Caucaia in Ceará. Data used for this project was compilation of the datasets collected using the Specieslink, GBif and reflora  database. The dataset contains 28 columns, which some of them are the following: *colecao*: the herbarium where the dried plant was deposited, *nº.tombo*: identifier number of herbarium specimen, taxonomic classification, where we have *filo*: phylum, *classificacao*: class, *familia*: family, *genero*: genus, *especie*: species and *sub.especies*: sub-species; *nome.popular*: common name, *status.de.conservacao*: the conservation status, *pais*: country, *estado*: state, *municipio*: municipality, *tipo.de.vegetacao*: the type of vegetation and *tipo.de.substrato*: substrate where the species is found. We also have *latitude.decimal*, *longitude.decimal*: the geographic coordinates of the collection site. 
 
-These are plant species data from the city of Caucaia in Ceará. Data were collected using the Specieslink database. Where is this herbarium spreadsheet where the plant was deposited, the code, taxonomic classification, the type of vegetation and substrate where the species is found, and the geographic coordinates of the collection site. 
-
-The dataset contains 28 columns, we have 
-
-This dataset includes all plants register in a herbarium database from the municipality of Caucaia.
-
-If the species cell contains an AN it represents that the person who register the plant in the herbarium didn't identify the species.
-
-The number of herbariums in the dataset
 
 ## Results and Discussion
 
@@ -36,6 +27,7 @@ I started checking for the richness in each specific vegetation.
 
 Following that we have the 
 
+The number of herbariums in the dataset
 
 ## Conclusion
 This short project was helpful to put in practice the topics discussed in the class, especially around the good practices that should be used when creating R projects. While working with a biodiversity database, it was possible to see the common problems with these databases regarding errors on collection names, manual typos and more. It was also possible to see the importance of working closely with a botanist and ecologist. The preparation of the database took most of the time while working on the project. This step of the data analysis is extremely important to pay close attention, since any erroneous cleaning decisions can result in inaccurate conclusions. Finally, for future work I would like to calculate richness considering the different vegetation and substrates. 
