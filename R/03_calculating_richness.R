@@ -1,8 +1,7 @@
 #Date: August 17, 2022
 #Author: Cristiana Aparecida Nogueira Couto
 #This script calculates the richness of the municipality of Caucaia
-#Both considering the whole city, as well as dividing by the different
-#vegetation, according to the registered data collected from the herbariums. 
+#according to the registered data collected from the herbariums. 
 #This script imports the data from the script 02_cleaning_data_II.R
 
 #Importing the data
