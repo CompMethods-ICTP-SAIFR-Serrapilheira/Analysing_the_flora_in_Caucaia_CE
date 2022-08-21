@@ -1,26 +1,50 @@
 ---
-title: 'Scientific workflows: report'
-author:
-- Andrea Sánchez-Tapia ^*1*^, Sara R. Mortara^*1*^
-- ^*1*^ ¡liibre! laboratório independente de informática da biodiversidade e reprodutibilidade em ecologia
-date: "July 7th 2022"
+title: "Analysing the flora richness in Caucaia-CE"
+author: "Cristiana Aparecida Nogueira Couto"
+date: "August 20, 2022"
 output:
   html_document:
     df_print: paged
-abstract: |
-  it will be worth reading the report
+  pdf_document: default
 ---
 
 ## Introdution
+Collecting databases for the existence of species in specific locations is critical for determining its diversity and richness. Why would we wish to know the plant species in a certain location?
 
-## Material and Methods
+All of these and other questions are prevalent in the day-to-day work of ecological researchers.
+
+In this brief project for the field of introduction to computational techniques, I'd like to look at how species differ depending on vegetation place.
+
+Caucaia is located in the Brazilian state of Ceará. The city has a
+
+## Database
+The database used for this work was a compilation of the 
 
 
-## Results
+These are plant species data from the city of Caucaia in Ceará. Data were collected using the Specieslink database. Where is this herbarium spreadsheet where the plant was deposited, the code, taxonomic classification, the type of vegetation and substrate where the species is found, and the geographic coordinates of the collection site. 
+
+The dataset contains 28 columns, we have 
+
+This dataset includes all plants register in a herbarium database from the municipality of Caucaia.
+
+If the species cell contains an AN it represents that the person who register the plant in the herbarium didn't identify the species.
+
+The number of herbariums in the dataset
+
+## Results and Discussion
+
+![The 30 most common genus in the database.](../figs/04_richness_by_genus.png)
+
+I started checking for the richness in each specific vegetation. 
+
+Following that we have the 
 
 
-## Discussion
+## Conclusion
+This short project was helpful to put in practice the topics discussed in the class, especially around the good practices that should be used when creating R projects. While working with a biodiversity database, it was possible to see the common problems with these databases regarding errors on collection names, manual typos and more. It was also possible to see the importance of working closely with a botanist and ecologist. The preparation of the database took most of the time while working on the project. This step of the data analysis is extremely important to pay close attention, since any erroneous cleaning decisions can result in inaccurate conclusions. Finally, for future work I would like to calculate richness considering the different vegetation and substrates. 
 
+## Acknowledgements
+Andrieli Lima for making the databases available and for the helpful discussions.
 
 ## References
 <div id="refs"> </div>
