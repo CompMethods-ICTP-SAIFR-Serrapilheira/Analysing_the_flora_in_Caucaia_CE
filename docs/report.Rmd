@@ -2,20 +2,17 @@
 title: "Analysing the flora richness in Caucaia-CE"
 author: "Cristiana Aparecida Nogueira Couto"
 date: "August 20, 2022"
+bibliography: ../citation/refs.bib
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 ## Introdution
-Collecting databases for the existence of species in specific locations is critical for determining its diversity and richness. Why would we wish to know the plant species in a certain location?
+Collecting information of the existence of species in specific locations is critical for determining its diversity and richness. Which species are found in a specific location? Which species are on risk of extinction? Why are there more species in this or that type of vegetation? All of these and other questions are present in the day-to-day work of ecologist and botanist researchers, and it is critical to have this information documented and available in order to answer them; this is where herbariums come into play. A herbarium is a collection of pressed, dried, and organized plant specimens based on taxonomic classification. The herbarium contains flora diversity registers and can be used as a foundation for many scientific studies. Having these digital collections is important for making them more accessible not only to scientists but also to the general public, as well as for protecting these collections.
 
-All of these and other questions are prevalent in the day-to-day work of ecological researchers.
-
-In this brief project for the field of introduction to computational techniques, I'd like to look at how species differ depending on vegetation place.
-
-Caucaia is located in the Brazilian state of Ceará. The city has a
+The database used in this work contains the different species found in the city of Caucaia located in the Brazilian state of Ceará. The city has a coastal extension of 44 kilometers, where part of it is in a area of environmental protection. The vegetation formations of the city includes Coastal Zone Vegetation Complex, Shrubby Caatinga and Cerrado [@ipece]. In this short project for the discipline of Computational Methods in the Serrapilheira/ICTP-SAIFR Training Program in Quantitative Biology and Ecology, I plan to do a initial data analysis, following some steps to clean the database and organize it. Subsequently, I would like to calculate the genus richness of the city and look at how the richness of species differ depending on vegetation type.
 
 ## Database
 The database used for this work was a compilation of the 
@@ -33,7 +30,7 @@ The number of herbariums in the dataset
 
 ## Results and Discussion
 
-![The 30 most common genus in the database.](../figs/04_richness_by_genus.png)
+![Genus richness: the 30 most common genus in the city of Caucaia-CE.](../figs/04_richness_by_genus.png)
 
 I started checking for the richness in each specific vegetation. 
 
@@ -44,7 +41,7 @@ Following that we have the
 This short project was helpful to put in practice the topics discussed in the class, especially around the good practices that should be used when creating R projects. While working with a biodiversity database, it was possible to see the common problems with these databases regarding errors on collection names, manual typos and more. It was also possible to see the importance of working closely with a botanist and ecologist. The preparation of the database took most of the time while working on the project. This step of the data analysis is extremely important to pay close attention, since any erroneous cleaning decisions can result in inaccurate conclusions. Finally, for future work I would like to calculate richness considering the different vegetation and substrates. 
 
 ## Acknowledgements
-Andrieli Lima for making the databases available and for the helpful discussions.
+Andrieli Lima for the helpful discussions.
 
 ## References
 <div id="refs"> </div>
