@@ -7,7 +7,7 @@ This short project proposes a initial data analysis of a dataset including all p
 
 Above we have the project structure folder, where you can find all the scripts used, the raw data and processed output, besides the figures and reports that can be found in the docs folder.
 ```
-project/
+Analysing_the_flora_in_Caucaia_CE/
 *    ├── data/
 *    │   ├── raw
 *    │   └── output
