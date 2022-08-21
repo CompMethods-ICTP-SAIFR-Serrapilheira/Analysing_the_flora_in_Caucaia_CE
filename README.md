@@ -17,3 +17,6 @@ project/
 *    ├── citation/
 *    └── README.md
 ```
+
+## Requirements
+The R packages required to reproduce the scripts are: readxl, dplyr, stringi, tidyr, ggplot2, tidyverse and readr.
