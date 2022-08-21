@@ -23,7 +23,7 @@ p <- ggplot(data = flora_genus_first_30, aes(x = reorder(genero, -richness_by_ge
   geom_bar(stat = "identity", fill="#a2de70") +
   theme_bw() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(x = "Genus", y = "Number of occurences") +
+  labs(x = "Genus", y = "Number of occurrences") +
   theme(plot.title = element_text(hjust = 0.5))
 
 #Richness by genus in Caucaia-CE
